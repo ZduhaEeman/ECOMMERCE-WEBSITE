@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Include Header -->
+  <div id="header"></div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <!-- Include Consumer Electronics Section -->
+    <div id="consumer-electronics"></div>
+    <!-- Include Deals and Offers Section -->
+    <div id="deals-and-offers"></div>
+    <!-- Include Home and Outdoor Section -->
+    <div id="home-and-outdoor"></div>
+    <!-- Include Send Requests Section -->
+    <div id="send-requests"></div>
+    <!-- Include Recommended Items Section -->
+    <div id="recommended-items"></div>
+    <!-- Include Extra Services Section -->
+    <div id="extra-services"></div>
+    <!-- Include Suppliers by Region Section -->
+    <div id="suppliers-by-region"></div>
+  </div>
+
+  <!-- Include Footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Function to load HTML content from a file into a specific element
+    function loadHTML(file, elementId) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => console.error('Error loading HTML:', error));
+    }
+
+    // Load sections
+    loadHTML('header.html', 'header');
+    loadHTML('consumer-electronics.html', 'consumer-electronics');
+    loadHTML('deals-and-offers.html', 'deals-and-offers');
+    loadHTML('home-and-outdoor.html', 'home-and-outdoor');
+    loadHTML('send-requests.html', 'send-requests');
+    loadHTML('recommended-items.html', 'recommended-items');
+    loadHTML('extra-services.html', 'extra-services');
+    loadHTML('suppliers-by-region.html', 'suppliers-by-region');
+    loadHTML('footer.html', 'footer');
+  </script>
+</body>
+</html>
