@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  
+  <header class="bg-white-100 shadow py-2">
+    <!-- First Row -->
+    <div class="container mx-auto flex items-center justify-between px-6">
+      <!-- Logo Section -->
+      <div class="flex items-center space-x-2">
+        <img src="images/logo.jpg" alt="Brand Logo" class="h-12 md:h-10"> <!-- Logo reverted to previous size -->
+      </div>
+
+
+<!-- Profile and Cart Section -->
+<div class="flex items-center space-x-6">
+  <a href="#" class="text-gray-600 hover:text-blue-500 flex items-center space-x-1">
+    <img src="images/user (1).png" alt="Profile" class="h-6 w-6">
+    <span class="text-sm">Profile</span>
+  </a>
+  <a href="#" class="text-gray-600 hover:text-blue-500 flex items-center space-x-1">
+    <img src="images/masg.png" alt="Messages" class="h-6 w-6">
+    <span class="text-sm">Messages</span>
+  </a>
+  <a href="#" class="text-gray-600 hover:text-blue-500 flex items-center space-x-1">
+    <img src="images/order-delivery.png" alt="Orders" class="h-6 w-6">
+    <span class="text-sm">Orders</span>
+  </a>
+  <a href="#" class="text-gray-600 hover:text-blue-500 flex items-center space-x-1">
+    <img src="images/carttt.png" alt="My Cart" class="h-6 w-6">
+    <span class="text-sm">My Cart</span>
+  </a>
+</div>
+</div>       
+
+
+
+
+  <div class="max-w-6xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <!-- Title -->
+    <h1 class="text-xl font-bold mb-4">My cart (3)</h1>
+
+    <!-- Main Content -->
+    <div class="flex flex-col lg:flex-row justify-between lg:space-x-6">
+      <!-- Cart Items -->
+      <div class="flex-1 space-y-4">
+        <!-- Item 1 -->
+        <div class="flex items-start justify-between bg-gray-50 p-4 rounded-lg border border-gray-200">
+          <div class="flex items-start">
+            <img src="images/smart watches.jpg"Product Image" class="w-16 h-16 rounded-lg object-cover">
+            <div class="ml-4">
+              <h2 class="font-medium text-gray-700">T-shirts with multiple colors, for men and lady</h2>
+              <p class="text-sm text-gray-500">Size: medium, Color: blue, Material: Plastic</p>
+              <p class="text-sm text-gray-500">Seller: Artel Market</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <p class="text-lg font-semibold text-gray-700">$78.99</p>
+            <select class="border border-gray-300 rounded-lg p-2">
+              <option>Qty: 9</option>
+            </select>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <button class="text-red-500 hover:underline">Remove</button>
+            <button class="text-blue-500 hover:underline">Save for later</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-start justify-between bg-gray-50 p-4 rounded-lg border border-gray-200">
+          <div class="flex items-start">
+            <img src="images/blezze 2.jpg" alt="Product Image" class="w-16 h-16 rounded-lg object-cover">
+            <div class="ml-4">
+              <h2 class="font-medium text-gray-700">T-shirts with multiple colors, for men and lady</h2>
+              <p class="text-sm text-gray-500">Size: medium, Color: blue, Material: Plastic</p>
+              <p class="text-sm text-gray-500">Seller: Best Factory LLC</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <p class="text-lg font-semibold text-gray-700">$39.00</p>
+            <select class="border border-gray-300 rounded-lg p-2">
+              <option>Qty: 3</option>
+            </select>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <button class="text-red-500 hover:underline">Remove</button>
+            <button class="text-blue-500 hover:underline">Save for later</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex items-start justify-between bg-gray-50 p-4 rounded-lg border border-gray-200">
+          <div class="flex items-start">
+            <img src="images/shirt 4.jpg" alt="Product Image" class="w-16 h-16 rounded-lg object-cover">
+            <div class="ml-4">
+              <h2 class="font-medium text-gray-700">T-shirts with multiple colors, for men and lady</h2>
+              <p class="text-sm text-gray-500">Size: medium, Color: blue, Material: Plastic</p>
+              <p class="text-sm text-gray-500">Seller: Artel Market</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <p class="text-lg font-semibold text-gray-700">$170.50</p>
+            <select class="border border-gray-300 rounded-lg p-2">
+              <option>Qty: 1</option>
+            </select>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <button class="text-red-500 hover:underline">Remove</button>
+            <button class="text-blue-500 hover:underline">Save for later</button>
+          </div>
+        </div>
+
+        <!-- Back to Shop and Remove All -->
+        <div class="mt-6 flex justify-between items-center">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">
+            Back to shop
+          </button>
+          <button class="text-gray-500 hover:underline">Remove all</button>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="w-full lg:w-1/3 bg-gray-50 p-6 rounded-lg border border-gray-200">
+        <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Add coupon" class="border border-gray-300 p-2 rounded-lg w-full">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">
+            Apply
+          </button>
+        </div>
+        <div class="mt-6">
+          <div class="flex justify-between text-gray-700">
+            <p>Subtotal:</p>
+            <p>$1403.97</p>
+          </div>
+          <div class="flex justify-between text-gray-700">
+            <p>Discount:</p>
+            <p class="text-red-500">- $60.00</p>
+          </div>
+          <div class="flex justify-between text-gray-700">
+            <p>Tax:</p>
+            <p class="text-green-500">+ $14.00</p>
+          </div>
+          <div class="flex justify-between font-bold text-lg text-gray-800 mt-4">
+            <p>Total:</p>
+            <p>$1357.97</p>
+          </div>
+        </div>
+        <button class="mt-4 bg-green-500 text-white w-full py-2 rounded-lg font-semibold hover:bg-green-600">
+          Checkout
+        </button>
+        <div class="mt-2 flex justify-center space-x-4 text-gray-500">
+            <img src="images/visa.jpg" alt="Visa" class="h-12 w-auto">
+            <img src="images/master card.png" alt="Mastercard" class="h-12 w-auto">
+            <img src="images/paypal.png" alt="PayPal" class="h-12 w-auto">
+          </div>
+          
+      </div>
+    </div>
+  </div>
+
+  
+
+
+<div class="bg-gray-100 py-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center space-x-4">
+      <!-- Secure Payment -->
+      <div class="flex items-center space-x-2">
+        <div class="bg-gray-200 p-3 rounded-full">
+          <img src="images/lock.png" alt="Secure Payment" class="h-8 w-8">
+        </div>
+        <div>
+          <h4 class="font-medium text-gray-700">Secure payment</h4>
+          <p class="text-sm text-gray-500">Have you ever finally just</p>
+        </div>
+      </div>
+  
+      <!-- Customer Support -->
+      <div class="flex items-center space-x-2">
+        <div class="bg-gray-200 p-3 rounded-full">
+          <img src="images/customer support.png" alt="Customer Support" class="h-8 w-8">
+        </div>
+        <div>
+          <h4 class="font-medium text-gray-700">Customer support</h4>
+          <p class="text-sm text-gray-500">Have you ever finally just</p>
+        </div>
+</div>
+  
+      <!-- Free Delivery -->
+      <div class="flex items-center space-x-2">
+        <div class="bg-gray-200 p-3 rounded-full">
+          <img src="images/free delivery.png" alt="Free Delivery" class="h-8 w-8">
+        </div>
+        <div>
+          <h4 class="font-medium text-gray-700">Free delivery</h4>
+          <p class="text-sm text-gray-500">Have you ever finally just</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+  
+
+  
+
+  <div class="bg-gray-100 p-6">
+    <h2 class="text-xl font-semibold mb-6">Saved for later</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Product 1 -->
+      <div class="bg-white shadow-md rounded-lg p-4">
+        <img src="images/laptop.jpg" alt="Product 1" class="w-full h-56 object-cover rounded-md mb-4">
+        <div class="text-gray-800 font-semibold text-lg mb-2">$99.50</div>
+        <p class="text-gray-500 text-sm mb-4">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="flex items-center justify-center w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.344 2.765C5.837 6.401 6.907 7 8.1 7h7.8c1.193 0 2.263-.599 2.756-1.235L20 3h2m-2 0h2v13c0 2-2 3-3.5 3H7.5C6 19 4 18 4 16V3z" />
+          </svg>
+          Move to cart
+        </button>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="bg-white shadow-md rounded-lg p-4">
+        <img src="images/smart watches.jpg" alt="Product 2" class="w-full h-56 object-cover rounded-md mb-4">
+        <div class="text-gray-800 font-semibold text-lg mb-2">$99.50</div>
+        <p class="text-gray-500 text-sm mb-4">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="flex items-center justify-center w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.344 2.765C5.837 6.401 6.907 7 8.1 7h7.8c1.193 0 2.263-.599 2.756-1.235L20 3h2m-2 0h2v13c0 2-2 3-3.5 3H7.5C6 19 4 18 4 16V3z" />
+          </svg>
+          Move to cart
+        </button>
+      </div>
+  
+      <!-- Product 3 -->
+      <div class="bg-white shadow-md rounded-lg p-4">
+        <img src="images/jjjjj.jpg" alt="Product 3" class="w-full h-56 object-cover rounded-md mb-4">
+        <div class="text-gray-800 font-semibold text-lg mb-2">$99.50</div>
+        <p class="text-gray-500 text-sm mb-4">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="flex items-center justify-center w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.344 2.765C5.837 6.401 6.907 7 8.1 7h7.8c1.193 0 2.263-.599 2.756-1.235L20 3h2m-2 0h2v13c0 2-2 3-3.5 3H7.5C6 19 4 18 4 16V3z" />
+          </svg>
+          Move to cart
+        </button>
+      </div>
+  
+      <!-- Product 4 -->
+      <div class="bg-white shadow-md rounded-lg p-4">
+        <img src="images/ooooo.jpg" alt="Product 4" class="w-full h-56 object-cover rounded-md mb-4">
+        <div class="text-gray-800 font-semibold text-lg mb-2">$99.50</div>
+        <p class="text-gray-500 text-sm mb-4">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="flex items-center justify-center w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.344 2.765C5.837 6.401 6.907 7 8.1 7h7.8c1.193 0 2.263-.599 2.756-1.235L20 3h2m-2 0h2v13c0 2-2 3-3.5 3H7.5C6 19 4 18 4 16V3z" />
+          </svg>
+          Move to cart
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="flex justify-center items-center bg-gray-100">
+    <div class="w-full max-w-3xl bg-white rounded-lg shadow-lg p-4">
+        <h1 class="text-2xl font-bold mb-4 text-center">Checkout</h1>
+  
+        <!-- Cart Items -->
+        <div id="cart-items" class="space-y-4 text-center"></div>
+  
+        <!-- Total Price -->
+        <div class="mt-4 border-t pt-2 text-center">
+            <h2 class="text-lg font-semibold">Total: <span id="total-price" class="text-blue-500">$0.00</span></h2>
+        </div>
+  
+        <!-- Proceed Button -->
+        <div class="mt-4 text-center">
+            <button class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600">
+                Proceed to Payment
+            </button>
+        </div>
+    </div>
+  </div>
+  
+
+
+  <div class="mt-6 text-center">
+    <a href="task3.html" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+        Back to Products
+    </a>
+</div>
+
+
+
+<!-- Wrapper with More Padding -->
+<div class="py-20">
+  <!-- Discount Banner Section -->
+  <div class="flex items-center justify-between bg-blue-500 p-6 rounded-lg shadow-lg">
+    <div>
+      <h3 class="text-white text-lg font-bold">Super discount on more than 100 USD</h3>
+      <p class="text-blue-200 text-sm">Have you ever finally just write dummy info</p>
+    </div>
+    <button class="bg-orange-500 text-white px-4 py-2 rounded font-semibold hover:bg-orange-600">
+      Shop now
+    </button>
+  </div>
+</div>
+
+
+
+
+
+  
+
+  <!-- Footer Section -->
+  <footer class="bg-white py-8 border-t border-gray-200">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+        <!-- Brand Section -->
+        <div class="col-span-1 text-center lg:text-left">
+          <img src="images/logo.jpg" alt="Brand Logo" class="h-12 mx-auto lg:mx-0">
+          <h2 class="text-lg font-bold text-gray-800 mt-4">Brand</h2>
+          <p class="text-sm text-gray-600 mt-2">Best information about the company goes here but now lorem ipsum is</p>
+          <div class="flex justify-center lg:justify-start mt-4 space-x-3">
+            <a href="#" class="text-gray-500 hover:text-gray-800">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-800">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-800">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-800">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-800">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Links Section -->
+        <div class="col-span-3 grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- About Section -->
+          <div>
+            <h3 class="text-md font-semibold text-gray-800">About</h3>
+            <ul class="mt-2 space-y-2 text-sm text-gray-600">
+              <li><a href="#" class="hover:underline">About Us</a></li>
+              <li><a href="#" class="hover:underline">Find Store</a></li>
+              <li><a href="#" class="hover:underline">Categories</a></li>
+              <li><a href="#" class="hover:underline">Blogs</a></li>
+            </ul>
+          </div>
+          <!-- Partnership Section -->
+          <div>
+            <h3 class="text-md font-semibold text-gray-800">Partnership</h3>
+            <ul class="mt-2 space-y-2 text-sm text-gray-600">
+              <li><a href="#" class="hover:underline">About Us</a></li>
+              <li><a href="#" class="hover:underline">Find Store</a></li>
+              <li><a href="#" class="hover:underline">Categories</a></li>
+              <li><a href="#" class="hover:underline">Blogs</a></li>
+            </ul>
+          </div>
+          <!-- Information Section -->
+          <div>
+            <h3 class="text-md font-semibold text-gray-800">Information</h3>
+            <ul class="mt-2 space-y-2 text-sm text-gray-600">
+              <li><a href="#" class="hover:underline">Help Center</a></li>
+              <li><a href="#" class="hover:underline">Money Refund</a></li>
+              <li><a href="#" class="hover:underline">Shipping</a></li>
+              <li><a href="#" class="hover:underline">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- For Users Section -->
+          <div>
+            <h3 class="text-md font-semibold text-gray-800">For Users</h3>
+            <ul class="mt-2 space-y-2 text-sm text-gray-600">
+              <li><a href="#" class="hover:underline">Login</a></li>
+              <li><a href="#" class="hover:underline">Register</a></li>
+              <li><a href="#" class="hover:underline">Settings</a></li>
+              <li><a href="#" class="hover:underline">My Orders</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Get App Section -->
+        <div class="col-span-1 text-center lg:text-left">
+          <h3 class="text-md font-semibold text-gray-800">Get App</h3>
+          <div class="mt-4">
+            <a href="#">
+              <img src="images/app store.png" alt="App Store" class="h-10 mx-auto lg:mx-0">
+            </a>
+            <a href="#">
+              <img src="images/google play.jpg" alt="Google Play" class="h-10 mx-auto lg:mx-0">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="mt-8 flex justify-between items-center text-gray-500 text-sm">
+        <p>&copy; 2023 Ecommerce.</p>
+        <div class="flex items-center space-x-2">
+          <img src="images/united states.jpg" alt="Flag" class="h-4 w-6 object-cover">
+          <a href="#" class="text-gray-500 hover:underline">English</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
